@@ -15,7 +15,8 @@ namespace TurnUp_POM.Pages
             //navigate time and material page
 
             driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a")).Click();
-            WaitHelper.WaitClickable(driver, "XPath", "/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a", 5);
+            Thread.Sleep(3000);
+            // WaitHelper.WaitClickable(driver, "XPath", "/html/body/div[3]/div/div/ul/li[5]/a", 5);
             driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a")).Click();
 
 

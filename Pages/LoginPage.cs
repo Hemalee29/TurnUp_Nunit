@@ -35,24 +35,21 @@ namespace TurnUp_POM.Pages
             IWebElement loginbutton = driver.FindElement(By.XPath("//*[@id='loginForm']/form/div[3]/input[1]"));
             loginbutton.Click();
 
+            //IWebElement hellohari = driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li/a"));
             IWebElement hellohari = driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li/a"));
             //option1 --Validate if the text on the hyperlink is Hello hari!
 
             if (hellohari.Text == "Hello hari!")
             {
-
-                //Console.WriteLine("logged in succefully, test passed");
-                Assert.Pass("logged in succefully, test passed");
+                Assert.Pass("Logged In successfully, test passed");
             }
-
             else
             {
-                //Console.WriteLine("logged in not succefully,test failed");
-                Assert.Fail("logged in not succefully,test failed");
+                Assert.Fail("Login failed, test failed");
             }
 
             //option2 --Validate if the text on the hyperlink is Hello hari!
-            Assert.That(hellohari.Text, Is.EqualTo("Hello hari!"));
+            //Assert.That(hellohari.Text, Is.EqualTo("Hello hari!"));
 
         }
     }

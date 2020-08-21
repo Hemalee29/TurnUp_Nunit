@@ -15,7 +15,8 @@ namespace TurnUp_POM.Pages
         {
             //click new button
             driver.FindElement(By.XPath("//*[@id='container']/p/a")).Click();
-            WaitHelper.WaitClickable(driver, "XPath", "//*[@id='container']/p/a", 5);
+            Thread.Sleep(3000);
+           // WaitHelper.WaitClickable(driver, "XPath", "//*[@id='container']/p/a", 5);
 
             try
             {
@@ -29,8 +30,7 @@ namespace TurnUp_POM.Pages
                 Assert.Fail("Create new TM page did not launch", ex.Message);
             }
 
-           
-
+ 
 
             //input code value
             driver.FindElement(By.Id("Code")).SendKeys("August2020");
@@ -71,11 +71,29 @@ namespace TurnUp_POM.Pages
         public void EditTM(IWebDriver driver)
         {
             Console.WriteLine("Check if the user is able to edit an existing time/ material record successfully with valid details");
+            Thread.Sleep(3000);
+            try
+            {
+                //Click on button to go to the last page
+                driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]/span")).Click();
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail("Unable to click on the last page button", ex.Message);
+            }
 
 
-         
-            driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr/td[5]/a[1]")).Click();
-            WaitHelper.WaitClickable(driver, "XPath", "//*[@id='tmsGrid']/div[3]/table/tbody/tr/td[5]/a[1]", 5);
+            try
+            {
+                //Click on edit button
+                driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[4]/td[5]/a[1]")).Click();
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail("Unable to click on the edit button", ex.Message);
+            }
+
+            
 
 
 
@@ -98,8 +116,18 @@ namespace TurnUp_POM.Pages
         {
             //Delete
 
-            driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[9]/td[5]/a[2]")).Click();
-            Console.WriteLine("Deleted Succesfully");
+            try
+            {
+                driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[7]/td[5]/a[2]")).Click();
+                // Assert.Pass("Delete Succefully", ex.Message);
+
+            }
+
+            catch (Exception ex)
+            {
+                Assert.Fail("Unable to click on the Delete button", ex.Message);
+            }
+
         }
     }
 }

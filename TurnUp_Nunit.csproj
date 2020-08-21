@@ -7,6 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="FeatureFiles\**" />
+    <Compile Remove="Hooks\**" />
+    <Compile Remove="StepDefinations\**" />
+    <EmbeddedResource Remove="FeatureFiles\**" />
+    <EmbeddedResource Remove="Hooks\**" />
+    <EmbeddedResource Remove="StepDefinations\**" />
+    <None Remove="FeatureFiles\**" />
+    <None Remove="Hooks\**" />
+    <None Remove="StepDefinations\**" />
+    <SpecFlowFeatureFiles Remove="FeatureFiles\**" />
+    <SpecFlowFeatureFiles Remove="Hooks\**" />
+    <SpecFlowFeatureFiles Remove="StepDefinations\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="FeatureFiles\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Hooks\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="StepDefinations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />

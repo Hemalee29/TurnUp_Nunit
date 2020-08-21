@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnUp_NunitTest", "TurnUp_NunitTest.csproj", "{AB0FE5CA-4A70-48A3-9DD2-76BEFCA889E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnUp_Specflow", "..\TurnUp_Specflow\TurnUp_Specflow.csproj", "{4ED0B2D8-F5BA-4B39-A38C-A2B499066065}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB0FE5CA-4A70-48A3-9DD2-76BEFCA889E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0FE5CA-4A70-48A3-9DD2-76BEFCA889E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0FE5CA-4A70-48A3-9DD2-76BEFCA889E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0FE5CA-4A70-48A3-9DD2-76BEFCA889E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED0B2D8-F5BA-4B39-A38C-A2B499066065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED0B2D8-F5BA-4B39-A38C-A2B499066065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED0B2D8-F5BA-4B39-A38C-A2B499066065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED0B2D8-F5BA-4B39-A38C-A2B499066065}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7237D73-CB07-419F-B2AC-A5238454F0F5}
+	EndGlobalSection
+EndGlobal
