@@ -40,19 +40,19 @@ namespace TurnUp_POM
             tmobj.EditTM(driver);
         }
 
-        [Test, Order(3), NUnit.Framework.Description("cheak if the user is able to Delete TM ")]
-        public void DeleteTM_Test()
-        {
+        //[Test, Order(3), NUnit.Framework.Description("cheak if the user is able to Delete TM ")]
+        ////public void DeleteTM_Test()
+        ////{
 
-            //Home page object init and defination
-            HomePage homeobj = new HomePage();
-            homeobj.NavigateToEmployee(driver);
+        ////    //Home page object init and defination
+        ////    HomePage homeobj = new HomePage();
+        ////    homeobj.NavigateToEmployee(driver);
 
-            //Delete exsiting TM test
-            TMPage tmobj = new TMPage();
-            tmobj.DeleteTM(driver);
+        ////    //Delete exsiting TM test
+        ////    TMPage tmobj = new TMPage();
+        ////    tmobj.DeleteTM(driver);
             
-        }
+        ////}
 
         
 
